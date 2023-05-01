@@ -1,32 +1,37 @@
-*{
-    
+* {
+
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 1.2 rem;
     height: 100%;
     text-align: justify;
     background-image: url("FONDO\ WEB.jpg");
-    
+
 }
-body, header, main, footer
-{
+
+body,
+header,
+main,
+footer {
     /* border: 3px RED solid ; */
     min-height: 60px;
     margin: 1.5rem;
     min-width: 400px
 }
+
 body {
     color: rgb(1, 43, 46);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+
 
 }
 
 header {
-    
+
     /* background-color: rgb(244, 248, 248); */
-    box-shadow:0 0 1.5rem rgb (83 78 76 / 50%);
+    box-shadow: 0 0 1.5rem rgb (83 78 76 / 50%);
     color: rgb(118, 221, 190);
     /* background-image: url("FONDO\ WEB.jpg"); */
     background-size: cover;
@@ -36,9 +41,8 @@ header {
 
 }
 
-
 .Manjares {
-margin-left: 200x;    
+    margin-left: 200x;
 }
 
 h1 {
@@ -50,9 +54,9 @@ h1 {
 }
 
 footer {
-/* 
+    /* 
     background-color: rgb(152, 226, 226); */
-    box-shadow:0 0 1.5rem rgb (83 78 76 / 50%);
+    box-shadow: 0 0 1.5rem rgb (83 78 76 / 50%);
     /* color: rgb(118, 221, 190); */
     /* background-image: url("FONDO\ WEB.jpg"); */
     background-size: cover;
@@ -60,48 +64,50 @@ footer {
     opacity: 0.7;
     min-height: 300px;
 }
-    
+
 
 
 .main>div {
-border: 2px blue solid ;
-min-height: 180px;
-margin: 1.5rem;
-/* height: auto;
+    border: 2px blue solid;
+    min-height: 180px;
+    margin: 1.5rem;
+    /* height: auto;
 float: left;
 width: 65%; */
 }
 
-.main>aside { 
-border: 2px blue solid ;
-min-height: 180px;
-margin: 1.5rem;
-/* min-width: 25%;
+.main>aside {
+    border: 2px blue solid;
+    min-height: 180px;
+    margin: 1.5rem;
+    /* min-width: 25%;
 float: left;
 width: auto;  */
-} 
+}
 
 .Seccion1 {
     text-align: center;
     min-height: 50px;
     margin: 1.5rem;
     background-image: none;
-    
 
-    
+
+
 }
+
 .Seccion1 article {
     /* border: 2px purple solid; */
     margin: 1.5rem;
     min-height: 20px;
     background-color: white;
-    
+
 }
-h4{
+
+h4 {
     text-align: center;
 }
 
-.carrusel{
+.carrusel {
     display: flex;
     gap: 10px;
 }
@@ -120,11 +126,12 @@ h4{
 
 
 
-.carrusel-fotos img{
+.carrusel-fotos img {
     background: black;
-    border:3px solid black ;
-    width: 300px; ;
-    height: 200px ;
+    border: 3px solid black;
+    width: 300px;
+    ;
+    height: 200px;
     object-fit: contain;
 }
 
@@ -134,29 +141,32 @@ h4{
 }
 
 @media screen and (min-width: 500px) {
-    .carrusel-fotos{
+    .carrusel-fotos {
         overflow: hidden;
     }
+
     .carrusel-fotos img {
         width: 500px;
         height: 400px;
 
     }
-.carrusel-menu{
-    display: block;
+
+    .carrusel-menu {
+        display: block;
+    }
+
+    .carrusel-menu img {
+        width: 50px;
+        height: 40px;
+    }
 }
-.carrusel-menu img {
-    width: 50px;
-    height: 40px;
-}
-}
-    
+
 
 
 #gif-ppal {
     min-width: 100%;
     max-height: 400px;
-    
+
 }
 
 
@@ -164,10 +174,11 @@ h4{
     width: 100%;
 }
 
-.header-menubar{
-width: auto;
-display: inline-block;
-margin: 1.5rem;
+.header-menubar {
+    width: auto;
+    display: flex;
+    align-content: center;
+    margin: 1.5rem;
 }
 
 .header-menubar {
@@ -178,7 +189,7 @@ margin: 1.5rem;
     display: inline-block;
     margin: 1.5rem 0 0 1.5rem 1rem;
     font-size: 22px;
-    }
+}
 
 
 
