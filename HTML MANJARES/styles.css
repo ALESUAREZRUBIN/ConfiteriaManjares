@@ -41,22 +41,6 @@ header {
     text-align: center;
 }
 
-.corazon { 
-    display: inline;    
-    font-size: 60px;
-    animation: corazon 1s linear infinite;
-}
-
-@keyframes corazon{
-0% {font-size: 40px}
-25% {font-size: 50px}
-50% {font-size: 60px;}
-75% {font-size: 50px;}
-100% {font-size:40px;}
-}
-
-
-
 .Manjares {
     margin-left: 200x;
 }
@@ -86,7 +70,44 @@ footer {
     background-repeat: no-repeat;
     opacity: 0.7;
     min-height: 300px;
+    }
+
+.redes-sociales {
+   
+ width: 800px;
+ margin-left: 200px;
+} 
+
+h6{
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(3, 58, 40);
+
 }
+.corazon { 
+    display: inline;    
+    font-size: 60px;
+    animation: corazon 2s linear infinite;
+    
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    font-weight: 900;
+    !text-align: center;
+    color: rgb(3, 58, 40);
+
+}
+
+@keyframes corazon{
+0% {font-size: 40px}
+25% {font-size: 50px}
+50% {font-size: 60px;}
+75% {font-size: 50px;}
+100% {font-size:40px;}
+}
+
+
 
 
 
