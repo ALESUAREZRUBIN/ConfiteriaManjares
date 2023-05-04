@@ -273,7 +273,7 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Puedes ajustar el ancho máximo a tu preferencia */
+    max-width: 90%; 
     margin: 0 auto;
   }
   
@@ -282,22 +282,34 @@ h4 {
     width: 20%;
     padding: 20px;
     background-color: #f0f0f0;
+    text-align: center;
   }
   
   /* Estilos para la grilla de productos */
   .grid-prod {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    width: 80%;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
+    padding: 10px;
     background-color: #e0e0e0;
   }
   
+  /*estilos para cada producto particular*/
   .grid-item {
     background-color: #fff;
     border: 1px solid #ccc;
-    height: 100px;
+    height: 350px;
+    padding: 5px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+    .size-img {
+    width: 200px;
+    height: 200ps;
+    border-radius: 5px;
   }
 
   @media screen and (max-width: 768px) {
