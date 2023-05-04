@@ -7,16 +7,15 @@ html {
     font-size: 1.2 rem;
     height: 100%;
     text-align: justify;
-    background-image: url("FONDO\ WEB.jpg");
+    background-image: url("img/FONDOWEB.jpg");
 
 }
 
 body,
 header,
-main,
 footer {
     /* border: 3px RED solid ; */
-    min-height: 60px;
+    /*min-height: 60px;*/
     margin: 1.5rem;
     min-width: 400px
 }
@@ -37,7 +36,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.7;
-    max-height: 200px;
+    /*max-height: 200px;*/
     text-align: center;
 }
 
@@ -94,7 +93,7 @@ h6{
     font-family: 'Courgette', cursive;
     font-size: 3rem;
     font-weight: 900;
-    !text-align: center;
+    text-align: center;
     color: rgb(3, 58, 40);
 
 }
@@ -203,6 +202,11 @@ h4 {
         width: 50px;
         height: 40px;
     }
+/*
+    .grid-prod {
+        height: 50px;
+      }
+      */
 }
 
 
@@ -262,3 +266,48 @@ h4 {
     margin-top:10px;
     background-color:#ffffbb;
     } */
+
+    /* Estilos para la sección de productos */
+.prod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Puedes ajustar el ancho máximo a tu preferencia */
+    margin: 0 auto;
+  }
+  
+  /* Estilos para el menu de productos */
+  .menu-prod {
+    width: 20%;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para la grilla de productos */
+  .grid-prod {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 100px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .prod {
+      flex-direction: column;
+    }
+    .menu-prod {
+      width: 100%;
+    }
+    .grid-prod {
+      width: 100%;
+    }
+  }
