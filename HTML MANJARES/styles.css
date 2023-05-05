@@ -273,13 +273,13 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
     /*width: 100%;*/
-    max-width: 100%; 
+    width: 100%; 
     margin: 0 auto;
   }
   
   /* Estilos para el menu de productos */
   .menu-prod {
-    width: 10%;
+    width: 150px;
     padding: 10px;
     background-color: #f0f0f0;
     text-align: center;
