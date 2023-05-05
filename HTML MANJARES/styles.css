@@ -10,15 +10,13 @@ html {
     background-image: url("img/FONDOWEB.jpg");
 
 }
-
+/*
 body,
 header,
 footer {
-    /* border: 3px RED solid ; */
-    /*min-height: 60px;*/
     margin: 1.5rem;
     min-width: 400px
-}
+}*/
 
 body {
     color: rgb(1, 43, 46);
@@ -28,15 +26,17 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-rows: 80px 80px 20px;
+    height: 250px;
+}
 
-    /* background-color: rgb(244, 248, 248); */
-    box-shadow: 0 0 1.5rem rgb (83 78 76 / 50%);
-    color: rgb(118, 221, 190);
-    /* background-image: url("FONDO\ WEB.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.7;
-    /*max-height: 200px;*/
+.size-logo{
+    height:100px;
+    width: 100px;
+}
+
+.center{
     text-align: center;
 }
 
@@ -48,9 +48,7 @@ header {
     background-color: rgb(102, 236, 236);
     height: 80px;
 }
-h1 {
-    
-    
+.titulo {
     font-family: 'Courgette', cursive;
     font-size: 3rem;
     font-weight: 900;
@@ -183,7 +181,45 @@ h4 {
 
 }
 
-@media screen and (min-width: 500px) {
+/* Estilos para tablet */
+@media (min-width: 425px) and (max-width: 757px){
+    .size-logo{
+        height:75px;
+        width: 75px;
+    }
+    .titulo{
+        font-size: 2rem;
+    }
+    header {
+        display: grid;
+        grid-template-rows: 80px 80px 20px;
+        height: 250px;
+    }
+  }
+
+/* Estilos para celular */
+@media (max-width: 425px) {
+    .size-logo{
+        height:50px;
+        width: 50px;
+    }
+    .titulo{
+        font-size: 1rem;
+    }
+    header {
+        display: grid;
+        grid-template-rows: 55px 25px 20px;
+        height: 150px;
+    }
+    .header-menubar {
+        font-family: 'Courgette', cursive;
+        font-size: 15px;
+    }
+  }
+
+
+/*medidas para celular*/
+@media screen and (min-width: 425px) {
     .carrusel-fotos {
         overflow: hidden;
     }
@@ -202,13 +238,7 @@ h4 {
         width: 50px;
         height: 40px;
     }
-/*
-    .grid-prod {
-        height: 50px;
-      }
-      */
 }
-
 
 
 #gif-ppal {
@@ -236,7 +266,6 @@ h4 {
     width: auto;
     display: inline-block;
     margin: 1.5rem 0 0 1.5rem 1rem;
-    font-size: 22px;
 }
 
 
@@ -250,6 +279,7 @@ h4 {
     font-weight: 700;
     text-align: right;
     margin: 0 0.5rem 0;
+    font-size: 22px;
 }
 
 /* .columna1 {
@@ -385,3 +415,8 @@ h4 {
         border-radius: 10px;
         margin: 10px;
       }
+
+      .nav-size {
+        font-family: 'Courgette', cursive;
+        font-size: 2rem;
+    }
