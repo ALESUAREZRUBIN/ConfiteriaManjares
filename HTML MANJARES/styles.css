@@ -270,26 +270,28 @@ h4 {
     /* Estilos para la sección de productos */
 .prod {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 90%; 
+    flex-wrap: wrap;
+    justify-content: center;
+    /*width: 100%;*/
+    max-width: 100%; 
     margin: 0 auto;
   }
   
   /* Estilos para el menu de productos */
   .menu-prod {
-    width: 20%;
-    padding: 20px;
+    width: 10%;
+    padding: 10px;
     background-color: #f0f0f0;
     text-align: center;
+    height: fit-content;
+    
   }
   
   /* Estilos para la grilla de productos */
   .grid-prod {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 80%;
     justify-content: space-around;
     padding: 10px;
     background-color: #e0e0e0;
@@ -306,20 +308,80 @@ h4 {
     text-align: center;
     border-radius: 5px;
 }
+/*tamaño de imagenes de productos*/
     .size-img {
     width: 200px;
     height: 200ps;
     border-radius: 5px;
   }
 
-  @media screen and (max-width: 768px) {
-    .prod {
-      flex-direction: column;
-    }
-    .menu-prod {
-      width: 100%;
-    }
-    .grid-prod {
-      width: 100%;
-    }
+  
+/*formulario*/
+  form {
+    width: 400px;
+    margin: 0 auto;
   }
+  /*formulario*/
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  /*formulario*/
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  /*boton de formulario*/
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  /*boton de formulario*/
+  button:hover {
+    background-color: #45a049;
+  }
+  .formu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    /*width: 100%;*/
+    max-width: 70%; 
+    margin: 0 auto;
+  }
+
+  /* Estilos para contacto */
+  .menu-cont {
+    width: 20%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    min-width: 200px;
+    height: fit-content;
+  }
+
+    /* Estilos para la div de formulario */
+    .grid-form {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 500px;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #e0e0e0;
+      }
+
+      .bordes{
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+      }
