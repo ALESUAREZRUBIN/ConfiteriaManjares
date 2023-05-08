@@ -10,6 +10,7 @@ html {
     background-image: url("img/FONDOWEB.jpg");
 
 }
+
 /*
 body,
 header,
@@ -27,17 +28,18 @@ body {
 
 header {
     display: grid;
-    grid-template-rows: 80px 80px 20px;
+    grid-template-rows: 100px 110px 40px;
     height: 250px;
 }
 
-.size-logo{
-    height:100px;
+.size-logo {
+    height: 100px;
     width: 100px;
 }
 
-.center{
+.center {
     text-align: center;
+    align-items: center;
 }
 
 .Manjares {
@@ -48,10 +50,12 @@ header {
     background-color: rgb(102, 236, 236);
     height: 80px;
 }
+
 .titulo {
     font-family: 'Courgette', cursive;
     font-size: 3rem;
     font-weight: 900;
+    align-items: center;
     text-align: center;
     color: rgb(3, 58, 40);
 
@@ -67,15 +71,15 @@ footer {
     background-repeat: no-repeat;
     opacity: 0.7;
     min-height: 300px;
-    }
+}
 
 .redes-sociales {
-   
- width: 800px;
- margin-left: 200px;
-} 
 
-h6{
+    width: 800px;
+    margin-left: 200px;
+}
+
+h6 {
     font-family: 'Courgette', cursive;
     font-size: 3rem;
     font-weight: 900;
@@ -83,11 +87,12 @@ h6{
     color: rgb(3, 58, 40);
 
 }
-.corazon { 
-    display: inline;    
+
+.corazon {
+    display: inline;
     font-size: 60px;
     animation: corazon 2s linear infinite;
-    
+
     font-family: 'Courgette', cursive;
     font-size: 3rem;
     font-weight: 900;
@@ -96,12 +101,26 @@ h6{
 
 }
 
-@keyframes corazon{
-0% {font-size: 40px}
-25% {font-size: 50px}
-50% {font-size: 60px;}
-75% {font-size: 50px;}
-100% {font-size:40px;}
+@keyframes corazon {
+    0% {
+        font-size: 40px
+    }
+
+    25% {
+        font-size: 50px
+    }
+
+    50% {
+        font-size: 60px;
+    }
+
+    75% {
+        font-size: 50px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
 }
 
 
@@ -181,64 +200,6 @@ h4 {
 
 }
 
-/* Estilos para tablet */
-@media (min-width: 425px) and (max-width: 757px){
-    .size-logo{
-        height:75px;
-        width: 75px;
-    }
-    .titulo{
-        font-size: 2rem;
-    }
-    header {
-        display: grid;
-        grid-template-rows: 80px 80px 20px;
-        height: 250px;
-    }
-  }
-
-/* Estilos para celular */
-@media (max-width: 425px) {
-    .size-logo{
-        height:50px;
-        width: 50px;
-    }
-    .titulo{
-        font-size: 1rem;
-    }
-    header {
-        display: grid;
-        grid-template-rows: 55px 25px 20px;
-        height: 150px;
-    }
-    .header-menubar {
-        font-family: 'Courgette', cursive;
-        font-size: 15px;
-    }
-  }
-
-
-/*medidas para celular*/
-@media screen and (min-width: 425px) {
-    .carrusel-fotos {
-        overflow: hidden;
-    }
-
-    .carrusel-fotos img {
-        width: 400px;
-        height: 300px;
-
-    }
-
-    .carrusel-menu {
-        display: block;
-    }
-
-    .carrusel-menu img {
-        width: 50px;
-        height: 40px;
-    }
-}
 
 
 #gif-ppal {
@@ -279,7 +240,6 @@ h4 {
     font-weight: 700;
     text-align: right;
     margin: 0 0.5rem 0;
-    font-size: 22px;
 }
 
 /* .columna1 {
@@ -297,38 +257,38 @@ h4 {
     background-color:#ffffbb;
     } */
 
-    /* Estilos para la sección de productos */
+/* Estilos para la sección de productos */
 .prod {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     /*width: 100%;*/
-    width: 100%; 
+    width: 100%;
     margin: 0 auto;
-  }
-  
-  /* Estilos para el menu de productos */
-  .menu-prod {
+}
+
+/* Estilos para el menu de productos */
+.menu-prod {
     width: 150px;
     padding: 10px;
     background-color: #f0f0f0;
     text-align: center;
     height: fit-content;
-    
-  }
-  
-  /* Estilos para la grilla de productos */
-  .grid-prod {
+
+}
+
+/* Estilos para la grilla de productos */
+.grid-prod {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     justify-content: space-around;
     padding: 10px;
     background-color: #e0e0e0;
-  }
-  
-  /*estilos para cada producto particular*/
-  .grid-item {
+}
+
+/*estilos para cada producto particular*/
+.grid-item {
     background-color: #fff;
     border: 1px solid #ccc;
     height: 350px;
@@ -338,36 +298,40 @@ h4 {
     text-align: center;
     border-radius: 5px;
 }
+
 /*tamaño de imagenes de productos*/
-    .size-img {
+.size-img {
     width: 200px;
     height: 200ps;
     border-radius: 5px;
-  }
+}
 
-  
+
 /*formulario*/
-  form {
+form {
     width: 400px;
     margin: 0 auto;
-  }
-  /*formulario*/
-  label {
+}
+
+/*formulario*/
+label {
     display: block;
     margin-top: 10px;
-  }
-  /*formulario*/
-  input,
-  textarea {
+}
+
+/*formulario*/
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 20px;
-  }
-  /*boton de formulario*/
-  button {
+}
+
+/*boton de formulario*/
+button {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -375,48 +339,136 @@ h4 {
     border-radius: 5px;
     cursor: pointer;
     float: right;
-  }
-  /*boton de formulario*/
-  button:hover {
+}
+
+/*boton de formulario*/
+button:hover {
     background-color: #45a049;
-  }
-  .formu {
+}
+
+.formu {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     /*width: 100%;*/
-    max-width: 70%; 
-    margin: 0 auto;
-  }
+    /*max-width: 85%;*/
+    margin-top: 24px;
+}
 
-  /* Estilos para contacto */
-  .menu-cont {
+/* Estilos para contacto */
+.menu-cont {
     width: 20%;
     padding: 20px;
     background-color: #f0f0f0;
     text-align: center;
-    min-width: 200px;
+    min-width: 170px;
     height: fit-content;
-  }
+    font-size: 13px;
+}
 
-    /* Estilos para la div de formulario */
-    .grid-form {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 500px;
-        justify-content: space-around;
-        padding: 10px;
-        background-color: #e0e0e0;
-      }
+/* Estilos para la div de formulario */
+.grid-form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
 
-      .bordes{
-        border: 1px solid black;
-        border-radius: 10px;
-        margin: 10px;
-      }
 
-      .nav-size {
-        font-family: 'Courgette', cursive;
+.bordes {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.nav-size {
+    font-size: 21px;
+    margin: 0 20px;
+}
+
+.nav{
+    display: inline-flex;
+    justify-content: space-around;
+    /*max-width: 70%;*/
+    align-items: center;
+}
+
+/* Estilos para tablet */
+@media (min-width: 430px) and (max-width: 757px) {
+    .size-logo {
+        height: 75px;
+        width: 75px;
+    }
+
+    .titulo {
         font-size: 2rem;
     }
+
+    header {
+        display: grid;
+        grid-template-rows: 80px 80px 20px;
+        height: 200px;
+    }
+    .nav-size {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+
+}
+
+/* Estilos para celular */
+@media (max-width: 430px) {
+    .size-logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    header {
+        display: grid;
+        grid-template-rows: 55px 35px 20px;
+        height: 120px;
+    }
+
+    .nav-size {
+        font-size: 15px;
+        margin: 0 5px;
+    }    
+    
+    .grid-form{
+        max-width: 250px;
+    }
+
+    .menu-cont{
+        font-size: 10px;
+    }
+}
+
+
+/*medidas para celular*/
+@media screen and (min-width: 430px) {
+    .carrusel-fotos {
+        overflow: hidden;
+    }
+
+    .carrusel-fotos img {
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .carrusel-menu {
+        display: block;
+    }
+
+    .carrusel-menu img {
+        width: 50px;
+        height: 40px;
+    }
+}
