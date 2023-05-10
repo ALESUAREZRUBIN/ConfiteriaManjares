@@ -268,29 +268,50 @@ h4 {
 /* Estilos para la sección de productos */
 .prod {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*width: 100%;*/
-    width: 100%;
-    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Estilos para el menu de productos */
 .menu-prod {
-    width: 150px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 300px;
     padding: 10px;
     text-align: center;
-    height: fit-content;
+}
 
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    font: 700;
 }
 
 /* Estilos para la grilla de productos */
 .grid-prod {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
     justify-content: space-around;
     padding: 10px;
+    max-width: 960px;
+}
+
+.link {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.link-derecha {
+    display: block;
+    text-align: right;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 /*estilos para cada producto particular*/
@@ -305,6 +326,15 @@ h4 {
     border-radius: 5px;
 }
 
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 /*tamaño de imagenes de productos*/
 .size-img {
     width: 200px;
