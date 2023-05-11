@@ -431,6 +431,51 @@ button:hover {
     align-items: center;
 }
 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-row svg {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+}
+
+
 /* Estilos para tablet */
 @media (min-width: 430px) and (max-width: 757px) {
     .size-logo {
