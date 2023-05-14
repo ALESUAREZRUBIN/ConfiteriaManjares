@@ -81,7 +81,7 @@ footer {
 
 h6 {
     font-family: 'Courgette', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     color: rgb(3, 58, 40);
     margin-block-start: 0.5em;
@@ -247,23 +247,9 @@ h4 {
     margin: 0 0.5rem 0;
 }
 .fuente-ing{
-    font-size: 20px;
+    font-size: 15px;
     font: bold;
 }
-/* .columna1 {
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:200px;
-    margin-top:10px;
-    background-color:#ffff55;
-    }
-    .columna2 {
-    margin-left:220px;
-    margin-right:20px;
-    margin-top:10px;
-    background-color:#ffffbb;
-    } */
 
 /* Estilos para la sección de productos */
 .prod {
