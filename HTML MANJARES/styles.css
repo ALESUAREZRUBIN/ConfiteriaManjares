@@ -28,8 +28,9 @@ body {
 
 header {
     display: grid;
-    grid-template-rows: 100px 110px 40px;
-    height: 250px;
+    grid-template-rows: 140px 90px 40px;
+    height: fit-content;
+    align-items: center;
 }
 
 .size-logo {
@@ -95,40 +96,30 @@ h6 {
     /*width: 710px;*/
     justify-content: center;
 }
-.corazon {
-    display: inline;
-    font-size: 60px;
-    animation: corazon 2s linear infinite;
+.corazon img {
+    width: 85px;
+    height: 85px;
+    animation: latido 3s infinite;
+  }
 
-    font-family: 'Courgette', cursive;
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: center;
-    color: rgb(3, 58, 40);
-
-}
-
-@keyframes corazon {
+  @keyframes latido {
     0% {
-        font-size: 40px
+      transform: scale(1);
+      box-shadow: none;
+      border-radius: 50%;
     }
-
-    25% {
-        font-size: 50px
-    }
-
     50% {
-        font-size: 60px;
+      transform: scale(1.3);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+      border-radius: 50%;
     }
-
-    75% {
-        font-size: 50px;
-    }
-
     100% {
-        font-size: 40px;
+      transform: scale(1);
+      box-shadow: none;
+      border-radius: 50%;
     }
-}
+  }
+
 
 
 
@@ -155,7 +146,7 @@ width: auto;  */
 .Seccion1 {
     text-align: center;
     min-height: 50px;
-    margin: 1.5rem;
+    margin: 20%;
 }
 .fondo{
     background-color: #f0f0f0;
@@ -461,10 +452,20 @@ footer {
     width: 100%;
 }
 
+.inicio p{
+    font-size: 22px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.inicio h3{
+    font-size: 30px;
+}
+
 
 /* Estilos para tablet */
 @media (min-width: 430px) and (max-width: 757px) {
-    .size-logo {
+    .corazon img {
         height: 75px;
         width: 75px;
     }
@@ -487,7 +488,7 @@ footer {
 
 /* Estilos para celular */
 @media (max-width: 430px) {
-    .size-logo {
+    .corazon img {
         height: 50px;
         width: 50px;
     }
