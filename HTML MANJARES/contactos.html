@@ -11,10 +11,20 @@
     <link rel="icon" href="IMG/Kitchen-Chef-Vector-PNG-Clipart.ico" />
   </head>
   <body>
-    <header class="header">
+        <header class="header">
       <div class="center corazon">
-        <img src="IMG/Kitchen-Chef-Vector-PNG-Clipart3.png" alt="" />
-      </div>
+      <img alt="Pet Friendly">
+  <script>
+  const URL = 'https://api.thecatapi.com/v1/images/search';
+  fetch(URL)
+  .then(res => res.json())
+  .then(data => {
+    const img = document.querySelector('img')
+    img.src = data[0].url;
+  
+  });
+</script>
+</div>
       <div class="center">
         <h1 class="titulo">Confitería Manjares</h1>
       </div>
