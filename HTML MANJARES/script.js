@@ -11,3 +11,32 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+});
+
+function validarFormulario(evento) {
+  evento.preventDefault();
+  var nombre = document.getElementById('nombre').value;
+  if(nombre.length == 0) {
+    alert('No has escrito nada en el nombre');
+    return;
+  }
+  var email = document.getElementById('email').value;
+  if( email.length ==0) {
+    alert('Escribe un email');
+    return;
+  }
+  var telefono = document.getElementById('telefono').value;
+  if (telefono.length ==0) {
+    alert('Escribe tu telefono');
+    return;
+  }
+  var mensaje = document.getElementById('mensaje').value;
+  if( mensaje.length ==0) {
+    alert('Dejanos tu mensaje');
+    return;}
+
+  this.submit();
+}
