@@ -40,3 +40,24 @@ function validarFormulario(evento) {
 
   this.submit();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const imagenGatoContainer = document.getElementById('imagenGato');
+
+  function fetchImagenGato() {
+    fetch('https://api.thecatapi.com/v1/images/search')
+      .then(response => response.json())
+      .then(data => {
+        const imageUrl = data[0].url;
+        const imageElement = document.createElement('img');
+        imageElement.src = imageUrl;
+        imagenGatoContainer.appendChild(imageElement);
+      })
+      .catch(error => {
+        console.log('Error al obtener la imagen del gato:', error);
+      });
+  }
+
+  // Obtener una imagen al cargar la página
+  fetchImagenGato();
+});
