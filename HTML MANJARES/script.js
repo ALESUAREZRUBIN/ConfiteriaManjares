@@ -20,7 +20,7 @@ function validarFormulario(evento) {
   evento.preventDefault();
   var nombre = document.getElementById('nombre').value;
   if(nombre.length == 0) {
-    alert('No has escrito nada en el nombre');
+    alert('Por favor ingresa tu nombre');
     return;
   }
   var email = document.getElementById('email').value;
